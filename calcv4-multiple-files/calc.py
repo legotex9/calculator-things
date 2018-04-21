@@ -24,7 +24,10 @@ class area():
         return a
     
     def areaCirc(self, a):
-        print('wip')
+        print(colored('a = pi * r^2','yellow'))
+        r = float(input('r = '))
+        a = pi*r**2
+        a = str(a)
         time.sleep(x1)
         return a
 
@@ -44,24 +47,48 @@ class perimiter():
         time.sleep(x1)
         return p
     def Circ(self, p):
-        print('wip')
+        print(colored('p = 2 * pi * r'))
+        r = float(input('r = '))
+        p = 2*pi*r
+        p = str(p)
+        time.sleep(x1)
         return p
 	
 class surfacearea():
     def Cube(self, sa):
-        print('wip')
+        print(colored('sa = ( l * w )* 6','yellow'))
+        l = float(input('l = '))
+        w = float(input('w = '))
+        sa = (l*w)*6
+        sa = str(sa)
         time.sleep(x1)
         return sa
     def RectangularPrisim(self, sa):
-        print('wip')
+        print(colored('sa = (p * h) + (2 * (l * w))','yellow'))
+        p = float(input('p = '))
+        h = float(input('h = '))
+        l = float(input('l = '))
+        w = float(input('w = '))
+        sa = (p*h)+(2*(l*w))
+        sa = str(sa)
         time.sleep(x1)
         return sa
     def TriangularPrisim(self, sa):
-        print('wip')
+        print(colored('sa = (p * h) + (2 * ((l * w)/2))','yellow'))
+        p = float(input('p = '))
+        h = float(input('h = '))
+        l = float(input('l = '))
+        w = float(input('w = '))
+        sa = (p*h)+(2*((l*w)/2))
+        sa = str(sa)
         time.sleep(x1)
         return sa
     def Cone(self, sa):
-        print('wip')
+        print(colored('sa = pi * r * (r + sqrt(h^2 + r^2))','yellow'))
+        r = float(input('r = '))
+        h = float(input('h = '))
+        sa = pi*r*(r+math.sqrt(h**2+r**2))
+        sa = str(sa)
         time.sleep(x1)
         return sa
     def RectangularPyramid(self, sa):
@@ -73,7 +100,10 @@ class surfacearea():
         time.sleep(x1)
         return sa
     def Sphere(self, sa):
-        print('wip')
+        print('sa = 4 * pi * r ^ 2')
+        r = float(inptu('r = '))
+        sa = 4*pi*r**2
+        sa = str(sa)
         time.sleep(x1)
         return sa
     def Cylander(self, sa):
@@ -113,3 +143,31 @@ class volume():
         print('wip')
         time.sleep(x1)
         return v
+
+class equations():
+    def pythagA(self, A):
+        print('wip')
+        time.sleep(x1)
+        return A
+    def pythagB(self, B):
+        print('wip')
+        time.sleep(x1)
+        return B
+    def pythagC(self, C):
+        print('wip')
+        time.sleep(x1)
+        return C
+    
+class conversionMath():
+   def CeltoFar(self, f):
+       c = float(input('celcius = '))
+       f = c*1.8+32
+       f = str(f)
+       time.sleep(x1)
+       return f
+   def FartoCel(self, f):
+       f = float(input('fahrenheit = '))
+       c = (f-32)/1.8
+       c = str(c)
+       time.sleep(x1)
+       return a

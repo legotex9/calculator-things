@@ -24,17 +24,3 @@ class conversionStuff():
 		print (colored('| INCHES TO CENTIMETERS | 6.15 |','blue'))
 		print (colored('|  INCHES TO MILIMETERS | 6.16 |','blue'))
 		print (colored('|[][][][][][][][][][][][][][][]|','blue'))
-	
-	def CelToFar(self, f):
-		c = float(input('celcius = '))
-		f = c*1.8+32
-		f = str(f)
-		time.sleep(1)
-		return (f)
-
-	def FarToCel(self, c):
-		f = float(input*'fahrenheit = ')
-		c = (f-32)/1.8
-		c = str(c)
-		time.sleep(1)
-		return(c)
