@@ -1,5 +1,6 @@
-import repl # learn more: https://python.org/pypi/repl
-from termcolor import colored
+#import repl # learn more: https://python.org/pypi/repl
+def colored(a,b):
+    return a
 import time
 import math
 #importing main menu
@@ -29,13 +30,15 @@ while q<1:
 	a = float(input())
 	x1 = int(1)
 	print(mem)
+	'''
 	#lower case alphabet
 	alphaLow = ['a','b','c','d','e','f','g','h','i','j','k','l','m','n','o','p','q','r','s','t','u','v','w','x','y','z']
 	#upper case alphabet
 	alphaUp = ['A','B','C','D','E','F','G','H','I','J','K','L','M','N','O','P','Q','R','S','T','Y','V','W','X','Y','Z']
-    if a == alphaLow or a == alphaUp:
+    if a == alphaLow[] or a == alphaUp[]:
         print(colored('that is an incorrect input. please try again.','red'))
         break
+
 
 #exit:
 	elif a == 0.03:
@@ -44,19 +47,19 @@ while q<1:
 		print(colored('down','red'))
 		time.sleep(1)
 		q = q + 1
- 
+
 #show main menu:
 	elif a == 0.04:
  		mainMenuNorm()
  		time.sleep(x1)
- 		
- 
+
+
 #settings:
 	elif a == 0.05:
 		print (colored('|radius or diameter | R | s1 |','cyan'))
 		S = input('setting id = ')
 		if S == 's1':
-			if s1 == 0: 
+			if s1 == 0:
 				s1 = s1 + 1
 				print (colored('setting updated','green'))
 			else:
@@ -66,9 +69,9 @@ while q<1:
 #clear screen:
 	elif a == 0.07:
 		repl.clear()
-		
+
 #invalid input:
 	else:
 		print (colored("that input is not listed or incorect. please try again.","red"))
 		time.sleep(x1)
-
+        '''

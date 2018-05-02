@@ -1,8 +1,10 @@
-from termcolor import colored
+
 import math
 import time
 pi = math.pi
 x1 = float(.25)
+def colored(a,b):
+    return a
 
 class area():
     def Sqr(self, a):
@@ -13,7 +15,7 @@ class area():
         a = str(a)
         time.sleep(x1)
         return a
-    
+
     def Tri(self, a):
         print(colored('a = (l * w)/2','yellow'))
         l = float(input('l = '))
@@ -22,7 +24,7 @@ class area():
         a = str(a)
         time.sleep(x1)
         return a
-    
+
     def Circ(self, a):
         print(colored('a = pi * r^2','yellow'))
         r = float(input('r = '))
@@ -53,7 +55,7 @@ class perimiter():
         p = str(p)
         time.sleep(x1)
         return p
-	
+
 class surfacearea():
     def Cube(self, sa):
         print(colored('sa = ( l * w )* 6','yellow'))
@@ -106,7 +108,7 @@ class surfacearea():
         sa = ((b*h)/2)*4
         time.sleep(x1)
         return sa
-    
+
     def Sphere(self, sa):
         print('sa = 4 * pi * r ^ 2')
         r = float(input('r = '))
@@ -114,7 +116,7 @@ class surfacearea():
         sa = str(sa)
         time.sleep(x1)
         return sa
-    
+
     def Cylander(self, sa):
         print(colored('(2*(pi*r)*h)+2*(pi*r**2)','yellow'))
         r = float(input('r = '))
@@ -122,7 +124,7 @@ class surfacearea():
         sa = (2*(pi*r)*h)+2*(pi*r**2)
         time.sleep(x1)
         return sa
-    
+
 class volume():
     def Cube(self, v):
         print(colored('v = l * w * h','yellow'))
@@ -152,7 +154,7 @@ class volume():
         print(colored('v = ((pi*r^2)*h)/3','yellow'))
         r = float(input('r = '))
         h = float(input('h = '))
-        v = str(((pi*r**2)h)/3)
+        v = ((pi*r**2)*h)/3
         time.sleep(x1)
         return v
     def RectangularPyramid(self, v):
@@ -182,4 +184,4 @@ class volume():
         h = float(input('h = '))
         v = str((pi*r**2)*h)
         time.sleep(x1)
-        return v 
+        return v

@@ -1,5 +1,7 @@
-from termcolor import colored
+
 import time
+def colored(a,b):
+    return a
 class menus():
     def mainMenuNorm(self):
         print (colored('                            ____________','cyan'))
