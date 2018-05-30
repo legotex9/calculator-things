@@ -1,4 +1,3 @@
-
 import math
 import time
 pi = math.pi
@@ -72,4 +71,49 @@ class geometry():
             def diameter(self, diameter, height):
                 return geometry.surface_area.cone.radius()
         class cylinder():
-
+            def radius(self, radius, height):
+                SA = geometry.perimiter.circle(radius)*height+geometry.area.circle(radius)*2
+                return SA
+            def diameter(self, diameter, height):
+                radius = diameter/2
+                SA = geometry.perimiter.circle(radius)*height+geometry.area.circle(radius)*2
+                return SA
+    class volume():
+        def cube(self, side_length):
+            v = side_length**3
+            return v
+        class prisim():
+            def rect(self, length, width, height):
+                v = length*width*height
+                return v
+            def tri(self, base, height1, height2):
+                v = ((base*height1)/2)*height2
+                return v
+        class pyramid():
+            def rect(self, base_length, base_width, height):
+                v = ((base_length*base_width)*height)/3
+                return v
+            def tri(self, base_length, base_height, height):
+                v = (((base_length*base_height)/2)*height)/3
+                return v
+        class sphere():
+            def radius(self, radius):
+                v = ((pi*r**3)*4)/3
+                return v
+            def diameter(self, diameter):
+                v = geometry.volume.sphere.radius(diameter/2)
+                return v
+        class cone():
+            def radius(self, radius, height):
+                v = ((pi*sqrd(r))*height)/3
+                return v
+            def diameter(self, diameter, height):
+                v = geometry.volume.cone.radius(diameter/2, height)
+                return v
+        class cylinder():
+            def radius(self, radius, height):
+                v = (pi*sqrd(r))*height
+                return v
+            def diameter(self, diameter, height):
+                v = geometry.volume.cylinder.radius(diameter/2,height)
+                return v
