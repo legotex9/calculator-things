@@ -16,6 +16,6 @@ menu.mainNorm
 while q<1:
 	pi = math.pi
 	x = float(x/2)
-	a = float(input())
+	#a = input()
 	x1 = int(1)
 	print(mem)
