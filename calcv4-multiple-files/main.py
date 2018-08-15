@@ -13,11 +13,14 @@ s3 = int(0)
 q = int(0)
 x = float(.25/2)
 
-menu.mainNorm
 
-while q<1:
-	pi = math.pi
-	x = float(x/2)
-	a = input()
-	x1 = int(1)
-    #if a = ''
+while 0<1:
+    menu.main()
+    a = input()
+    '''if a == "g1":
+        x = float(input(print("side 1 length = ")))
+        y = float(input(print("side 2 length = ")))
+        z = geometry.area.sqr(x,x,y)
+        z = print("area = " + str(z))
+        print (z)'''
+
