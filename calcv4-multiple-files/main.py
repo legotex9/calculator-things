@@ -15,12 +15,23 @@ x = float(.25/2)
 
 
 while 0<1:
+    x = float(0)
+    y = float(0)
+    z = float(0)
     menu.main()
     a = input()
-    '''if a == "g1":
+    if a == "g1":
         x = float(input(print("side 1 length = ")))
         y = float(input(print("side 2 length = ")))
         z = geometry.area.sqr(x,x,y)
         z = print("area = " + str(z))
-        print (z)'''
+        print (z)
+    elif a == 'g2':
+        x = float(input(print("side length = ")))
+        y = float(input(print("height = ")))
+        z = geometry.area.tri(x,x,y)
+        z = print("area = " + str(z))
+        print(z)
+        break
+
 

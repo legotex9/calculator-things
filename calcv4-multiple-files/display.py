@@ -62,7 +62,9 @@ class menu:
 
         print("  cylinder:")
         print("   SA w/ RADIUS: v10")
-        print("   SA w/ DIAMETER: v11me")
+        print("   SA w/ DIAMETER: v11")
+   #def algo(input):
+
 
 
 
