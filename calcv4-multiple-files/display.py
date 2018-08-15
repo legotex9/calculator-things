@@ -6,12 +6,18 @@ class menu:
 
         print("  square: a1")
         print("  triangle: a2")
-        print("  circle: a3")
+        print("  circle:")
+        print("   w/ RADIUS: a3")
+        print("   w/ DIAMETER: a4")
+
+        print("")
 
         print(" perimiter:")
         print("  square: p1")
         print("  triangle: p2")
-        print("  circle: p3")
+        print("  circle:")
+        print("   w/ RADIUS: p3")
+        print("   w/ DIAMETER: p4")
 
         print("")
 
@@ -27,7 +33,7 @@ class menu:
         print("   triangular: sa5")
 
         print("  sphere:")
-        print("   SA menw/ RADIUS: sa6")
+        print("   SA w/ RADIUS: sa6")
         print("   SA w/ DIAMETER: sa7")
 
         print("  cone:")
@@ -63,6 +69,7 @@ class menu:
         print("  cylinder:")
         print("   SA w/ RADIUS: v10")
         print("   SA w/ DIAMETER: v11")
+
    #def algo(input):
 
 
