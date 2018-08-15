@@ -45,8 +45,8 @@ class geometry():
             def rect (self, length, width, height):
                 SA = 2*(width*length+height*length+height*width)
                 return SA
-            def tri (self, perimiter_of_base, height):
-                SA = perimiter_of_base*height+area_of_base*2
+            def tri (self, perimiter_of_base, height, tri_height, tri_base):
+                SA = perimiter_of_base*height+geometry.area.tri(tri_base, tri_height)
                 return SA
         class pyramid():
             def rect (self, length, width, height):
