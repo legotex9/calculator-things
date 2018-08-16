@@ -60,7 +60,7 @@ class geometry():
                 return SA
         class sphere():
             def radius (self, radius):
-                SA
+                SA = 4*pi*radius**2
                 return SA
             def diameter(self, diameter):
                 return geometry.surface_area.sphere.radius(diameter/2)

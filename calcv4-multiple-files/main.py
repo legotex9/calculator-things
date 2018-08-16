@@ -39,11 +39,13 @@ while 0 < 1:
         x = float(input(print("radius = ")))
         z = geometry.area.circle.Radius(1, x)
         z = print("area = " + str(z))
+        print(z)
 	#diamater
     elif a == 'a4':
         x = float(input(print("diameter = ")))
         z = geometry.area.circle.Diameter(1, x)
         z = print("area = " + str(z))
+        print(z)
 	#area /\ /\
 	#perimiter \/ \/
     #square
@@ -58,16 +60,19 @@ while 0 < 1:
         x = float(input(print("base = ")))
         z = geometry.perimiter.tri(1, x)
         z = print("perimiter = " + str(z))
+        print(z)
     #radius
     elif a == 'p3':
         x = float(input(print("raduius = ")))
         z = geometry.perimiter.circle.Radius(1, x)
         z = print("circumference = " + str(z))
+        print(z)
     #diameter
     elif a == 'p4':
         x = float(input(print("diameter = ")))
         z = geometry.perimiter.circle.Diameter(1, x)
         z = print("circumference = " + str(z))
+        print(z)
 	#perimiter /\ /\
 	#surface area \/ \/
     #cube
@@ -75,6 +80,7 @@ while 0 < 1:
         x = float(input(print("area for one side= ")))
         z = geometry.surface_area.cube(1,x)
         z = print("surface area = " + str(Z))
+        print(z)
     #prisim-rectangular
     elif a == 'sa2':
         w = float(input(print("length = ")))
@@ -82,6 +88,7 @@ while 0 < 1:
         y = float(input(print("height = ")))
         z = geometry.surface_area.prisim.rect(1,w,x,y)
         z = print("surface area = " + str(z))
+        print(z)
     #prisim-triangular
     elif a == 'sa3':
         v = float(input(print("base perimiter = ")))
@@ -90,6 +97,7 @@ while 0 < 1:
         y = float(input(print("side length of triangle =")))
         z = geometry.surface_area.prisim.tri(v, w, x, y)
         z = print("surface area ="  + str(z))
+        print(z)
     #pyramid-rectangular
     elif a == 'sa4':
         w = float(input(print("length =")))
@@ -97,20 +105,54 @@ while 0 < 1:
         y = float(input(print("width =")))
         z = geometry.surface_area.pyramid.rect(w,x,y)
         z = print("surface area = " + str(z))
+        print(z)
     #pyramid-triangular
     elif a == 'sa5':
+        x = float(input(print("base =")))
+        y = float(input(print("height =")))
+        z = geometry.surface_area.pyramid.tri(x,y)
+        z = print("surface area =" + str(z))
+        print(z)
     #sphere-radius
     elif a == 'sa6':
+        x = float(input(print("radius =")))
+        z = geometry.surface_area.sphere.radius(x)
+        z = print("surface area =" + str(z))
+        print(z)
     #sphere-diameter
     elif a == 'sa7':
+        x = float(input(print("diameter =")))
+        z = geometry.surface_area.sphere.diameter(x)
+        z = print("surface area =" + str(z))
+        print(z)
     #cone-radius
     elif a == 'sa8':
+        x = float(input(print("radius =")))
+        y = float(input(print("height =")))
+        z = geometry.surface_area.cone.radius(x,y)
+        z = print("surface area =" + str(z))
+        print(z)
     #cone-diameter
     elif a == 'sa9':
+        x = float(input(print("diameter =")))
+        y = float(input(print("height =")))
+        z = geometry.surface_area.cone.diameter(x,y)
+        z = print("surface area =" + str(z))
+        print(z)
     #cylinder-radius
     elif a == 'sa10':
+        x = float(input(print("radius =")))
+        y = float(input(print("height =")))
+        z = geometry.surface_area.cylinder.radius(x,y)
+        z = print("surface area =" + str(z))
+        print(z)
     #cylinder-diameter
     elif a == 'sa11':
+        x = float(input(print("diameter =")))
+        y = float(input(print("height =")))
+        z = geometry.surface_area.cylinder.diameter(x,y)
+        z = print("surface area =" + str(z))
+        print(z)
 	#surface area /\ /\
 	#volumne \/ \/
 	#volume /\ /\
