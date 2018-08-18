@@ -70,6 +70,9 @@ class menu:
         print("   SA w/ RADIUS: v10")
         print("   SA w/ DIAMETER: v11")
 
+        print("other:")
+
+        print(" print menu: main menu")
    #def algo(input):
 
 
