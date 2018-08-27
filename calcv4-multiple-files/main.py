@@ -155,57 +155,68 @@ while 0 < 1:
         print(output('surface area',z))
 	#surface area /\ /\
 	#volume \/ \/
+    #cube
     elif a == 'v1':
         x = float(input(print("side length =")))
         z = geometry.volume.cube(1)
         print(output('volume',z))
+    #rectangular prisim
     elif a == 'v2':
         w = float(input(print("length =")))
         x = float(input(print("height =")))
         y = float(input(print("width =")))
         z = geometry.volume.prisim.rect(w,x,y)
         print(output('volume',z))
+    #triangular prisim
     elif a == 'v3':
         w = float(input(print("base =")))
         x = float(input(print("tri angle height =")))
         y = float(input(print("length =")))
         z = geometry.volume.prisim.tri(w,x,y)
         print(output('volume',z))
+    #rectangular pyramid
     elif a == 'v4':
         w = float(input(print("base length =")))
         x = float(input(print("base width =")))
         y = float(input(print("height =")))
-        z = geometry.volume.prisim.tri(w,x,y)
+        z = geometry.volume.pyramid.rect(w,x,y)
         print(output('volume',z))
+    #triangular pyramid
     elif a == 'v5':
         w = float(input(print("base length =")))
         x = float(input(print("base width =")))
         y = float(input(print("height =")))
-        z = geometry.volume.prisim.tri(w,x,y)
+        z = geometry.volume.pyramid.tri(w,x,y)
         print(output('volume',z))
+    #sphere with radius
     elif a == 'v6':
         x = float(input(print("radius =")))
         z = geometry.volume.sphere.radius(x)
         print(output('volume',z))
+    #sphere w/ diameter
     elif a == 'v7':
         x = float(input(print("diameter =")))
         z = geometry.volume.sphere.diameter(x)
         print(output('volume',z))
+    #cone w/ radius
     elif a == 'v8':
         x = float(input(print("radius =")))
         y = float(input(print("height =")))
         z = geometry.volume.cone.radius(x)
         print(output('volume',z))
+    #con w/ cylinder
     elif a == 'v9':
         x = float(input(print("diameter =")))
         y = float(input(print("height =")))
         z = geometry.volume.cone.diameter(x)
         print(output('volume',z))
+    #cylinder w/ radius
     elif a == 'v10':
         x = float(input(print("radius =")))
         y = float(input(print("height =")))
         z = geometry.volume.cylinder.radius(x)
         print(output('volume',z))
+    #cylinder w/ diameter
     elif a == 'v11':
         x = float(input(print("diameter =")))
         y = float(input(print("height =")))

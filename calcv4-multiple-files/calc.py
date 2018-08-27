@@ -117,3 +117,11 @@ class geometry():
             def diameter(self, diameter, height):
                 v = geometry.volume.cylinder.radius(diameter/2,height)
                 return v
+
+class other():
+    def pythag(a,b):
+        a2 = a**2
+        b2 = b**2
+        a2b2 = a2+b2
+        final = sqrt(a2b2)
+        return final
